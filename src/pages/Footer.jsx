@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-scroll";
+
 import LogoUz from "../assets/icons/logoUz";
 
 import { useTranslation } from "react-i18next";
@@ -7,20 +9,20 @@ function Footer() {
   const { t } = useTranslation();
 
   return (
-    <div className="w-full bg-blue">
+    <div className="w-full bg-blue text-white">
       <div className="container py-12 md:px-6 px-5">
         <div className="flex items-center justify-between">
           <LogoUz />
 
           <ul className="text-white flex w-1/2 justify-between flex-col gap-5 md:flex-row ">
             <li>
-              <a href="#link">{t("home")}</a>
+              <Link to={"home"}>{t("home")}</Link>
             </li>
             <li>
-              <a href="#link">{t("about")}</a>
+              <Link to={"about"}>{t("about")}</Link>
             </li>
             <li>
-              <a href="#link">{t("contact")}</a>
+              <Link to={"contact"}>{t("contact")}</Link>
             </li>
           </ul>
         </div>

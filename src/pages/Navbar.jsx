@@ -1,14 +1,15 @@
 import React from "react";
 import i18next from "i18next";
 import { useTranslation } from "react-i18next";
-import logo from "../assets/img/logo.png";
+// import logo from "../assets/img/logo.png";
 // import { Link } from "react-scroll";
 
 // import LogoUz from "../assets/icons/logoUz";
 
 const Navbar = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
+  const [activeLang] = React.useState(i18n.language);
   const [open, setOpen] = React.useState(false);
 
   const ChangeLang = () => {
@@ -22,10 +23,10 @@ const Navbar = () => {
   };
 
   return (
-    <div className="w-full top-0 left-0 bg-blue">
+    <header className="w-full top-0 left-0 bg-blue text-white border-b-1">
       <div className="md:flex items-center justify-between pb-6 pt-6 md:px-10 px-7 container">
         <div className="font-bold text-2xl cursor-pointer flex items-center  text-gray-800 ">
-          <img className="w-20 h-7 md:h-[40px] md:w-[90px]" src={logo} alt="logo" />
+          <LogoUz />
         </div>
 
         <div
@@ -39,6 +40,7 @@ const Navbar = () => {
           <select
             className="block mobile absolute top-6 right-20 md:hidden h-8"
             id="select"
+            value={i18n.language}
             onChange={ChangeLang}
           >
             <option value="ru">Ru</option>
@@ -48,24 +50,35 @@ const Navbar = () => {
         </div>
 
         <ul
-          className={`text-white md:flex md:items-center md:pb-0 pb-12 absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto gap-10  ${
+          className={`text-white md:flex md:items-center md:pb-0 pb-12 absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto gap-10 ${
             open
               ? "flex flex-col  top-[60px] bg-blue z-10 w-[100%] h-auto text-center pt-8 transition-all delay-200"
               : "top-[-490px] "
           }`}
         >
           <li>
-            <a to={"home"}>{t("home")}</a>
+            <Link className="uppercase cursor-pointer" to={"home"}>
+              {t("home")}
+            </Link>
           </li>
           <li>
-            <a to={"about"}>{t("about")}</a>
+            <Link className="uppercase cursor-pointer" to={"about"}>
+              {t("about")}
+            </Link>
           </li>
           <li>
-            <a to={"contact"}>{t("contact")}</a>
+            <Link className="uppercase cursor-pointer" to={"contact"}>
+              {t("contact")}
+            </Link>
           </li>
         </ul>
         <div className="flex gap-4">
-          <select className="hidden md:block" id="select2" onChange={ChangeLang2}>
+          <select
+            className="hidden md:block"
+            id="select2"
+            onChange={ChangeLang2}
+            defaultValue={activeLang}
+          >
             <option value="ru">Ru</option>
             <option value="en">En</option>
             <option value="uz">Uz</option>
@@ -75,7 +88,7 @@ const Navbar = () => {
           </button>
         </div>
       </div>
-    </div>
+    </header>
   );
 };
 
