@@ -1,7 +1,5 @@
-import logo from "./img/logo.png" ;
+import logoUz from "./img/logo-uz.svg";
 
-import homeLogo from "./img/home-logo.png"
+import homeLogo from "./img/home-logo.png";
 
-export {
-    logo ,  homeLogo
-}
+export { logoUz, homeLogo };

@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 function Devider() {
-    return (
-        <div className='py-12'></div>
-    )
+  return <div className="py-12"></div>;
 }
 
-export default Devider
+export default Devider;

@@ -7,22 +7,22 @@ const apiKey = "mxg1FAWZDFTTolibVk7j0Q";
 const loadPath = `https://api.i18nexus.com/project_resources/translations/{{lng}}/{{ns}}.json?api_key=${apiKey}`;
 
 i18next
-    .use(HttpBackend)
-    .use(LanguageDetector)
-    .use(initReactI18next)
-    .init({
-        fallbackLng: "uz",
+  .use(HttpBackend)
+  .use(LanguageDetector)
+  .use(initReactI18next)
+  .init({
+    fallbackLng: "uz",
 
-        ns: ["default"],
-        defaultNS: "default",
+    ns: ["default"],
+    defaultNS: "default",
 
-        detection: {
-            caches: ["localStorage", "cookie"],
-        },
+    detection: {
+      caches: ["localStorage", "cookie"],
+    },
 
-        supportedLngs: ["ru", "en", "uz"],
+    supportedLngs: ["ru", "en", "uz"],
 
-        backend: {
-            loadPath: loadPath
-        }
-    })
+    backend: {
+      loadPath: loadPath,
+    },
+  });
