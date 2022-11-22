@@ -61,26 +61,11 @@ button {
 }
 
 select {
-<<<<<<< HEAD
-    background-color: #EEC85B;
-    border: 1px solid rgb(197, 197, 197);
-    border-radius: 5px;
-    box-sizing: border-box;
-    color: #000;
-    display: block;
-    font-family: SourceSansPro, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    height: 40px;
-    width: 80px;
-    padding: 0 20px 0 16px;
-    outline: none;
-=======
-  background-color: white;
+  background-color: #eec85b;
   border: 1px solid rgb(197, 197, 197);
   border-radius: 5px;
   box-sizing: border-box;
-  color: #3e3d40;
+  color: #000;
   display: block;
   font-family: SourceSansPro, Helvetica, Arial, sans-serif;
   font-size: 14px;
@@ -89,7 +74,6 @@ select {
   width: 80px;
   padding: 0 20px 0 16px;
   outline: none;
->>>>>>> c4002d96621ea213fd6b3c089562b7d94bcd04b2
 
   &.mobile {
     width: 50px;

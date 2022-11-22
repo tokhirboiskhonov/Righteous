@@ -19,34 +19,27 @@ p {
 }
 
 .home-bg {
-<<<<<<< HEAD
-    background: url(../assets/img/bg-images.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-=======
-  background-image: url("../assets/img/bg-full.png");
+  background: url(../assets/img/bg-images.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
->>>>>>> c4002d96621ea213fd6b3c089562b7d94bcd04b2
 }
 
-.righteous__img{
-    margin: 0 auto;
-    padding-top: 235px;
+.righteous__img {
+  margin: 0 auto;
+  padding-top: 235px;
 }
 
-.legal__text{
-    width: 800px;
-    margin: 0 auto;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 64px;
-    text-align: center;
-    color: #0E243B;;
+.legal__text {
+  width: 800px;
+  margin: 0 auto;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 64px;
+  text-align: center;
+  color: #0e243b;
 }
 
 @media (max-width: 1000px) {
