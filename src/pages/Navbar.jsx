@@ -34,9 +34,9 @@ const Navbar = () => {
 
                 <div className="lang">
                     <select className='block mobile absolute top-6 right-20 md:hidden h-8' id='select' onChange={ChangeLang}>
-                        <option value="uz">Uz</option>
                         <option value="ru">Ru</option>
                         <option value="en">En</option>
+                        <option value="uz">Uz</option>
                     </select>
                 </div>
 
@@ -53,9 +53,9 @@ const Navbar = () => {
                 </ul>
                 <div className='flex gap-4'>
                     <select className='hidden md:block' id='select2' onChange={ChangeLang2}>
-                        <option value="uz">Uz</option>
                         <option value="ru">Ru</option>
                         <option value="en">En</option>
+                        <option value="uz">Uz</option>
                     </select>
                     <button className="rounded-md text-black py-2 px-12 text-16 bg-yellow hidden md:block">Call</button>
                 </div>
