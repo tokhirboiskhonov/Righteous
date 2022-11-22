@@ -57,17 +57,17 @@ const Navbar = () => {
           }`}
         >
           <li>
-            <Link className="uppercase" to={"home"}>
+            <Link className="uppercase cursor-pointer" to={"home"}>
               {t("home")}
             </Link>
           </li>
           <li>
-            <Link className="uppercase" to={"about"}>
+            <Link className="uppercase cursor-pointer" to={"about"}>
               {t("about")}
             </Link>
           </li>
           <li>
-            <Link className="uppercase" to={"contact"}>
+            <Link className="uppercase cursor-pointer" to={"contact"}>
               {t("contact")}
             </Link>
           </li>
