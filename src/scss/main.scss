@@ -1,64 +1,67 @@
+@import "./fonts.scss";
+
 input {
-    width: 100%;
-    background-color: #f9f9f9;
-    padding: 12px 20px;
-    border-radius: 10px;
-    border: 1px solid #e4e4e4;
-    margin: 15px 0;
+  width: 100%;
+  background-color: #f9f9f9;
+  padding: 12px 20px;
+  border-radius: 10px;
+  border: 1px solid #e4e4e4;
+  margin: 15px 0;
 
-    &::placeholder {
-        color: #c0c0c0;
-    }
+  &::placeholder {
+    color: #c0c0c0;
+  }
 
-    &:focus {
-        outline: none;
-        border: 1px solid #0e243b;
-    }
+  &:focus {
+    outline: none;
+    border: 1px solid #0e243b;
+  }
 }
 
 textarea {
-    width: 100%;
-    background-color: #f9f9f9;
-    padding: 12px 20px;
-    border-radius: 10px;
-    border: 1px solid #e4e4e4;
-    margin: 15px 0;
-    resize: none;
-    height: 140px;
+  width: 100%;
+  background-color: #f9f9f9;
+  padding: 12px 20px;
+  border-radius: 10px;
+  border: 1px solid #e4e4e4;
+  margin: 15px 0;
+  resize: none;
+  height: 140px;
 
-    &::placeholder {
-        color: #c0c0c0;
-    }
+  &::placeholder {
+    color: #c0c0c0;
+  }
 
-    &:focus {
-        outline: none;
-        border: 1px solid #0e243b;
-    }
+  &:focus {
+    outline: none;
+    border: 1px solid #0e243b;
+  }
 }
 
 a {
-    transition: border 0.4s all;
-    border-bottom: 2px solid transparent;
+  transition: border 0.4s all;
+  border-bottom: 2px solid transparent;
 
-    &:hover {
-        border-bottom: 2px solid #eec85b;
-    }
+  &:hover {
+    border-bottom: 2px solid #eec85b;
+  }
 }
 
 button {
-    &:hover {
-        box-shadow: 0 0 0 18px transparent;
-        animation: pulse 1s;
-    }
+  &:hover {
+    box-shadow: 0 0 0 18px transparent;
+    animation: pulse 1s;
+  }
 }
 
 @keyframes pulse {
-    from {
-        box-shadow: 0 0 0 0 #eec85b;
-    }
+  from {
+    box-shadow: 0 0 0 0 #eec85b;
+  }
 }
 
 select {
+<<<<<<< HEAD
     background-color: #EEC85B;
     border: 1px solid rgb(197, 197, 197);
     border-radius: 5px;
@@ -72,11 +75,24 @@ select {
     width: 80px;
     padding: 0 20px 0 16px;
     outline: none;
+=======
+  background-color: white;
+  border: 1px solid rgb(197, 197, 197);
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #3e3d40;
+  display: block;
+  font-family: SourceSansPro, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  height: 40px;
+  width: 80px;
+  padding: 0 20px 0 16px;
+  outline: none;
+>>>>>>> c4002d96621ea213fd6b3c089562b7d94bcd04b2
 
-    &.mobile {
-        width: 50px;
-        padding: 0;
-    }
+  &.mobile {
+    width: 50px;
+    padding: 0;
+  }
 }
-
-
