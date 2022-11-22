@@ -8,10 +8,10 @@ function ContactUs() {
   const Send = (e) => {
     e.preventDefault();
   };
-  
+
   return (
-    <div id="contact" className="container">
-      <h1 className="text-center md:text-42 text-24 pb-6">{t("contactus")}</h1>
+    <div className="container" id="contact">
+      <h2 className="text-center md:text-42 text-24 pb-6">{t("contactus")}</h2>
       <form
         onSubmit={(e) => Send(e)}
         className="bg-white w-11/12 lg:w-6/12 mx-auto py-5 px-4 md:px-8 rounded-[20px]"

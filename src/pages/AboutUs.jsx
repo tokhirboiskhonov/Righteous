@@ -6,8 +6,8 @@ function AboutUs() {
   const { t } = useTranslation();
 
   return (
-    <div className="container text-center text-24 md:px-10 px-6 lg:px-64 py-9">
-      <h1 className="text-center text-blue md:text-42 text-24">{t("about")}</h1>
+    <section className="container text-center text-24 md:px-10 px-6 lg:px-64 py-9" id="about">
+      <h2 className="text-center text-blue md:text-42 text-24">{t("about")}</h2>
 
       <p className="py-3 text-blue text-16 md:text-24">{t("text1")}</p>
       <p className="py-3 text-blue text-16 md:text-24">{t("text2")}</p>
@@ -20,7 +20,7 @@ function AboutUs() {
       <p className="py-3 text-blue text-16 md:text-24">{t("text9")}</p>
       <p className="py-3 text-blue text-16 md:text-24">{t("text10")}</p>
       <p className="py-3 text-blue text-16 md:text-24">{t("text11")}</p>
-    </div>
+    </section>
   );
 }
 

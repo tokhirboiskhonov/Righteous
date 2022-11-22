@@ -6,10 +6,10 @@ import App from "./App";
 import "./language";
 
 // import tailwind
-import "./css/tailwind.scss";
+import "./css/tailwind.css";
 
 // import my styles
-import "./css/style.scss";
+import "./css/style.css";
 import "./scss/main.scss";
 
 // import boxicons

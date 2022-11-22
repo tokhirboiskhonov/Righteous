@@ -2,7 +2,9 @@ import React from "react";
 import i18next from "i18next";
 import { useTranslation } from "react-i18next";
 
-import { logoUz } from "../assets/data";
+import { Link } from "react-scroll";
+
+import LogoUz from "../assets/icons/logoUz";
 
 const Navbar = () => {
   const { t } = useTranslation();
@@ -23,8 +25,7 @@ const Navbar = () => {
     <div className="w-full top-0 left-0 bg-blue text-white">
       <div className="md:flex items-center justify-between pb-6 pt-6 md:px-10 px-7 container">
         <div className="font-bold text-2xl cursor-pointer flex items-center  text-gray-800 ">
-          <logoUz />
-          <img className="w-20 h-7 md:h-[40px] md:w-[80px]" src={logoUz} alt="logo" />
+          <LogoUz />
         </div>
 
         <div
@@ -54,22 +55,24 @@ const Navbar = () => {
           }`}
         >
           <li>
-            <a href="#link">{t("home")}</a>
+            <Link to={"home"}>{t("home")}</Link>
           </li>
           <li>
-            <a href="#link">{t("about")}</a>
+            <Link to={"about"}>{t("about")}</Link>
           </li>
           <li>
-            <a href="#link">{t("contact")}</a>
+            <Link to={"contact"}>{t("contact")}</Link>
           </li>
         </ul>
+
         <div className="flex gap-4">
           <select className="hidden md:block" id="select2" onChange={ChangeLang2}>
             <option value="uz">Uz</option>
             <option value="ru">Ru</option>
             <option value="en">En</option>
           </select>
-          <button className="rounded-md text-black py-2 px-12 text-16 bg-yellow hidden md:block">
+
+          <button className="rounded-md text-blue py-2 px-12 text-16 bg-yellow hidden md:block ">
             Call
           </button>
         </div>
