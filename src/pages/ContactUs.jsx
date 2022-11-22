@@ -18,8 +18,8 @@ function ContactUs() {
         action="#"
       >
         <div className="flex flex-col md:flex-row w-full justify-between md:gap-5">
-          <input type="text " placeholder={t("name")} />
-          <input type="text " placeholder={t("name")} />
+          <input type="text" placeholder={t("name")} />
+          <input type="text" placeholder={t("name")} />
         </div>
         <div className="flex flex-col md:flex-row w-full justify-between md:gap-5">
           <input type="text" placeholder={t("name")} />

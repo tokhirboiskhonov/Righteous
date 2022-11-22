@@ -19,6 +19,8 @@ p {
 }
 
 .home-bg {
+  height: calc(100vh - 88px);
+  justify-content: center;
   background: url(../assets/img/bg-images.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -27,7 +29,8 @@ p {
 
 .righteous__img {
   margin: 0 auto;
-  padding-top: 235px;
+  margin-bottom: 30px;
+  /* padding-top: 235px; */
 }
 
 .legal__text {
@@ -42,7 +45,7 @@ p {
   color: #0e243b;
 }
 
-@media (max-width: 1000px) {
+/* @media (max-width: 1000px) {
   .home-bg {
     height: 500px;
   }
@@ -52,4 +55,4 @@ p {
   .home-bg {
     height: 300px;
   }
-}
+} */
