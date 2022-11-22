@@ -2,9 +2,9 @@ import React from "react";
 import i18next from "i18next";
 import { useTranslation } from "react-i18next";
 // import logo from "../assets/img/logo.png";
-// import { Link } from "react-scroll";
+import { Link } from "react-scroll";
 
-// import LogoUz from "../assets/icons/logoUz";
+import LogoUz from "../assets/icons/logoUz";
 
 const Navbar = () => {
   const { t, i18n } = useTranslation();
