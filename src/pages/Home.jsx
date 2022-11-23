@@ -14,7 +14,7 @@ function Home() {
         width={600}
         height={300}
       />
-      <h1 className="legal__text">{t("Юридические услуги для Вашего Бизнеса в Узбекистане")}</h1>
+      <h1 className="py-3 text-blue text-center text-56 md:text-24">{t("heroText")}</h1>
     </div>
   );
 }

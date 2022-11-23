@@ -46,10 +46,24 @@ p {
   .home-bg {
     height: 500px;
   }
+
+  .righteous__img {
+    height: 300px;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 100px;
+  }
 }
 
 @media (max-width: 500px) {
   .home-bg {
     height: 300px;
+  }
+
+  .righteous__img {
+    height: 200px;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 50px;
   }
 }

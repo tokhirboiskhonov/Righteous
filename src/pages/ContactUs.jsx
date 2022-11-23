@@ -18,15 +18,15 @@ function ContactUs() {
         action="#"
       >
         <div className="flex flex-col md:flex-row w-full justify-between md:gap-5">
-          <input type="text " placeholder={t("name")} />
-          <input type="text " placeholder={t("name")} />
+          <input type="text " placeholder={t("firstname")} />
+          <input type="text " placeholder={t("surname")} />
         </div>
         <div className="flex flex-col md:flex-row w-full justify-between md:gap-5">
-          <input type="text" placeholder={t("name")} />
-          <input type="text" placeholder={t("name")} />
+          <input type="text" placeholder={t("mail")} />
+          <input type="text" placeholder={t("phonenumber")} />
         </div>
-        <input type="text" placeholder={t("name")} />
-        <textarea placeholder={t("name")} />
+        <input type="text" placeholder={t("nameofcompany")} />
+        <textarea placeholder={t("comment")} />
         <div className="flex w-full justify-end">
           <button type="submit" className="rounded-md text-black py-2 px-12 text-16 bg-yellow">
             {t("submit")}
