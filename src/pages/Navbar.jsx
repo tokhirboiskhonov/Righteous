@@ -1,10 +1,9 @@
 import React from "react";
 import i18next from "i18next";
 import { useTranslation } from "react-i18next";
-// import logo from "../assets/img/logo.png";
 import { Link } from "react-scroll";
 
-import LogoUz from "../assets/icons/logoUz";
+import LogoRu from "../assets/icons/logo";
 
 const Navbar = () => {
   const { t, i18n } = useTranslation();
@@ -26,7 +25,7 @@ const Navbar = () => {
     <header className="w-full top-0 left-0 bg-blue text-white border-b-1">
       <div className="md:flex items-center justify-between pb-6 pt-6 md:px-10 px-7 container">
         <div className="font-bold text-2xl cursor-pointer flex items-center  text-gray-800 ">
-          <LogoUz />
+          <LogoRu width={80} height={40} />
         </div>
 
         <div
@@ -83,9 +82,13 @@ const Navbar = () => {
             <option value="en">En</option>
             <option value="uz">Uz</option>
           </select>
-          <button className="rounded-md text-black py-2 px-12 text-16 bg-yellow hidden md:block">
+
+          <Link
+            className="rounded-md text-blue py-2 px-12 text-16 bg-yellow hidden md:block uppercase font-medium cursor-pointer"
+            to="contact"
+          >
             Call
-          </button>
+          </Link>
         </div>
       </div>
     </header>
